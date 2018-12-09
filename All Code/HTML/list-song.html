@@ -1,0 +1,65 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>List Song</title>-->
+    <!--<link rel="stylesheet" href="../css/list-song.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="center">-->
+    <!--<h1>List Song</h1>-->
+    <!--<audio controls>-->
+        <!--<source src="#" type="audio/ogg">-->
+        <!--<source src="horse.mp3" type="audio/mpeg">-->
+        <!--Your browser does not support the audio tag.-->
+    <!--</audio>-->
+<!--</div>-->
+<!--<form name="song-form">-->
+    <!--<input name="btn-submit" type="button" value="submit">-->
+<!--</form>-->
+<!--<div id="list-song">-->
+<!--</div>-->
+<!--<script src="../js/list-song.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Hát Tôi Yêu</title>
+<link rel="stylesheet" href="../css/list-song.css">
+</head>
+<body>
+<div class="header">
+    <div class="left">
+         <img src="http://buzzdesign.net/wp-content/uploads/2015/07/4.png" alt="logo Music">
+         <span class="text logo">Bảng Xếp Hạng Bài Hát 2018</span>
+    </div>
+    <div class="right">
+    <a href="register.html" title="Register member">Register</a>
+    <a href="login.html" title="Member login">Login</a>
+    <a href="Create.html" title="Create Song">Create Song</a>
+    <a href="list-song.html" title="Latest Song">Latest Song</a>
+    <a href="my-song.html" title="My Song">My Song</a>
+    </div>
+</div>
+<div class="song-player">
+    <div class="song-detail">
+        <marquee behavior="scroll" direction="left">
+            <div class="current-song-title">
+                <span id="current-play-title"></span>
+            </div>
+        </marquee>
+    </div>
+    <div class="player">
+        <audio controls id="my-mp3" autoplay>
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+<div class="list-song" id="list-song">
+</div>
+<script src="../js/list-song.js"></script>
+</body>
+</html>
