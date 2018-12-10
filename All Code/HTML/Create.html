@@ -6,42 +6,31 @@
     <link rel="stylesheet" href="../css/create-song.css">
 </head>
 <body>
-<div class="main-content">
+<div class="header">
+    <img src="http://buzzdesign.net/wp-content/uploads/2015/07/4.png" alt="logo Music">
+    <div class="link">
+        <a href="register.html" title="Register member">Register</a>
+        <a href="login.html" title="Member login">Login</a>
+        <a href="list-song.html" title="Latest Song">Latest Song</a>
+        <a href="my-song.html" title="My Song">My Song</a>
+    </div>
+</div>
     <form action="" method="post" name="song-form">
-        <div class="row">
-            <div class="col-1">Name</div>
-            <div class="col-6">
-                <input type="text" name="name">
-                <span></span>
-            </div>
+        <div class="create">Create Song</div>
+        <div>
+            <input placeholder="Name" type="text" name="name">
         </div>
-        <div class="row">
-            <div class="col-1">Singer</div>
-            <div class="col-6">
-                <input type="text" name="singer">
-                <span></span>
-            </div>
+        <div>
+             <input placeholder="Singer" type="text" name="singer">
         </div>
-        <div class="row">
-            <div class="col-1">Author</div>
-            <div class="col-6">
-                <input type="text" name="author">
-                <span></span>
-            </div>
+        <div>
+            <input placeholder="Author" type="text" name="author">
         </div>
-        <div class="row">
-            <div class="col-1">Thumbnail</div>
-            <div class="col-6">
-                <input type="text" name="thumbnail">
-                <span></span>
-            </div>
+        <div>
+             <input placeholder="Thumbnail" type="text" name="thumbnail">
         </div>
-        <div class="row">
-            <div class="col-1">Link</div>
-            <div class="col-6">
-                <input type="text" name="link">
-                <span></span>
-            </div>
+        <div>
+            <input placeholder="Link" type="text" name="link">
         </div>
         <div class="row">
             <div class="col-1"></div>
@@ -51,7 +40,6 @@
             </div>
         </div>
     </form>
-</div>
 <script src="../js/create-song.js"></script>
 </body>
 </html>

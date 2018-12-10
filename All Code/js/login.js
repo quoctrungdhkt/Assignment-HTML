@@ -18,6 +18,7 @@ function doLogin() {
         if (xhr.readyState == 4 && xhr.status == 201) {
             var reponseData = JSON.parse(xhr.responseText);
             alert('Success !' + reponseData.token);
+            location.href = 'list-song.html'
             localStorage.setItem('token-key', reponseData.token);
             document.forms['login-form'].reset();
         } else if (xhr.readyState == 4) {
@@ -25,7 +26,7 @@ function doLogin() {
             alert('login fails, please try again! ' + xhr.responseText);
         }
     };
-    xhr.open('POST', 'https://2-dot-backup-server-002.appspot.com/_api/v2/members/authentication', true);
+    xhr.open('POST', 'https://2-dot-backup-server-003.appspot.com/_api/v2/members/authentication', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(jsonLoginInformation);
 }

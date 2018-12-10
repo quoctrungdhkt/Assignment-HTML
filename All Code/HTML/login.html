@@ -5,20 +5,16 @@
     <title>Login form</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
-<body>
-<div class="main-content">
     <form action="" method="post" name="login-form">
-
+        <div class="Login">Login</div>
         <div class="row">
-            <div class="col-1">Password</div>
-            <div class="col-6">
-                <input type="password" name="password">
+            <div class="col-6"><input placeholder="Email" type="email" name="email">
                 <span></span>
             </div>
         </div>
         <div class="row">
-            <div class="col-1">Email</div>
-            <div class="col-6"><input type="email" name="email">
+            <div class="col-6">
+                <input placeholder="Password" type="password" name="password">
                 <span></span>
             </div>
         </div>
@@ -27,6 +23,7 @@
             <div class="col-6">
                 <input type="button" name="btnSubmit" value="Submit">
                 <input type="reset" name="btnReset" value="Reset">
+                <b>Bạn chưa có tài khoản? Vui lòng bấm <a href="register.html">vào đây</a> để đăng ký</b>
             </div>
         </div>
     </form>

@@ -1,71 +1,471 @@
-
 * {
-    font-family: Tahoma;
-    margin: 7px;
-}
-.song-item {
-    border: 1px solid rgba(13,23,20,0.2);
-    border-radius: 10px;
-}
-.song-item:after {
-    content: '';
-    clear: both;
-    display: table;
-}
-.song-index {
-    float: left;
-    width: 5%;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 2%;
-    padding-left: 1%;
-}
-.song-thumbnail {
-    float: left;
-    width: 10%;
-}
-.song-thumbnail img {
-    width: 100%;
-    border-radius: 10px;
-}
-.song-infor {
-    padding-top: 1%;
-    float: left;
-    width: 20%;
-}
-.song-infor .song-name {
-    font-weight: bold;
-}
-.song-infor .song-singer {
-    font-weight: lighter;
-    color: rgba(0,0,23,0.47);
-}
-.song-control {
-    padding-top: 3%;
-    color: dodgerblue;
-    cursor: pointer;
-    text-decoration: underline;
-    float: left;
-    width: 10%;
-}
+        font-family: Tahoma;
+        margin: 7px;
+        font-weight: bold;
+    }
 
-.song-detail {
-    float: left;
-    width: 50%;
-    padding-top: 0.5%;
-    font-weight: bold;
-}
+    .song-item {
+        border: 1px solid rgba(13, 23, 20, 0.2);
+        border-radius: 10px;
+    }
 
-.center {
-    color: olivedrab;
-    text-align: center;
+    .song-item:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    .song-index {
+        float: left;
+        width: 5%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2%;
+        padding-left: 1%;
+    }
+
+    .song-thumbnail {
+        float: left;
+        width: 10%;
+    }
+
+    .song-thumbnail img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .song-infor {
+        padding-top: 1%;
+        float: left;
+        width: 20%;
+    }
+
+    .song-infor .song-name {
+        font-weight: bold;
+    }
+
+    .song-infor .song-singer {
+        font-weight: lighter;
+        color: rgba(0, 0, 23, 0.47);
+    }
+
+    .song-control {
+        padding-top: 3%;
+        color: dodgerblue;
+        cursor: pointer;
+        float: left;
+        width: 10%;
+    }
+    audio {
+        width: 100%;
+    }
+    .song-detail {
+        float: right;
+        width: 80%;
+        padding-top: 0.5%;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+    .center {
+        color: olivedrab;
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .header {
+        box-sizing: border-box;
+        width: 98.8%;
+        background: rgba(110, 132, 143, 0.19);
+    }
+
+    .header .link {
+        float: right;
+        padding-top: 100px;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+
+    .list-song {
+        height: 165px;
+    }
+
+    .player {
+        background: rgba(138, 139, 143, 0.19);
+    }
+
+@media only screen and (min-width: 320px) {
+    /* For iphone 5/5SE: */
+    img {
+        width: 100%;
+    }
+    .header .link{
+        font-weight: bold;
+        font-size: 15px;
+        float: none;
+        height: 100px;
+    }
+    a {
+        margin-bottom: 20px;
+    }
+    .player{
+        height: 120px;
+    }
+    audio {
+        width: 90%;
+    }
+    .song-detail{
+        width: 70%;
+    }
+    .song-index {
+        float: left;
+        width: 5%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 15%;
+        padding-left: 1%;
+    }
+    .song-thumbnail img {
+        width: 80px;
+        border-radius: 10px;
+    }
+    .song-infor .song-name {
+        font-weight: bold;
+        font-size: 10px;
+        padding-left: 80px;
+        width: 100%;
+    }
+    .song-infor .song-singer {
+        font-weight: lighter;
+        color: rgba(0, 0, 23, 0.47);
+        display: none;
+    }
+    .fa, .far, .fas {
+        font-family: "Font Awesome 5 Free";
+        padding-top: 60px;
+    }
 }
-img {
-    width: 150px;
+@media only screen and (min-width: 375px) {
+    /* For iphone 6/7/8: */
+    img {
+        width: 100%;
+    }
+    .header .link{
+        font-weight: bold;
+        font-size: 15px;
+        float: none;
+        height: 100px;
+    }
+    a {
+        margin-bottom: 20px;
+    }
+    a {
+        margin-bottom: 20px;
+    }
+    .player{
+        height: 120px;
+    }
+    audio {
+        width: 90%;
+    }
+    .song-detail{
+        width: 70%;
+    }
+    .song-index {
+        float: left;
+        width: 5%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 15%;
+        padding-left: 1%;
+    }
+    .song-thumbnail img {
+        width: 80px;
+        border-radius: 10px;
+    }
+    .song-infor .song-name {
+        font-weight: bold;
+        font-size: 10px;
+        padding-left: 80px;
+        width: 100%;
+    }
+    .song-infor .song-singer {
+        font-weight: lighter;
+        color: rgba(0, 0, 23, 0.47);
+        display: none;
+    }
+    .fa, .far, .fas {
+        font-family: "Font Awesome 5 Free";
+        padding-top: 60px;
+    }
 }
-.header .right{
-    float: right;
-    margin-right: 20px;
-    margin-bottom: 100px;
+@media only screen and (min-width: 414px) {
+    /* For iphone 6/7/8 Plus: */
+    img {
+        width: 100%;
+    }
+    .header .link{
+        font-weight: bold;
+        font-size: 15px;
+        float: none;
+        height: 100px;
+    }
+    a {
+        margin-bottom: 20px;
+    }
+    a {
+        margin-bottom: 20px;
+    }
+    .player{
+        height: 120px;
+    }
+    audio {
+        width: 60%;
+    }
+    .song-detail{
+        width: 70%;
+    }
+    .song-index {
+        float: left;
+        width: 5%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 15%;
+        padding-left: 1%;
+    }
+    .song-thumbnail img {
+        width: 80px;
+        border-radius: 10px;
+    }
+    .song-infor .song-name {
+        font-weight: bold;
+        font-size: 11px;
+        padding-left: 80px;
+        width: 100%;
+    }
+    .song-infor .song-singer {
+        font-weight: lighter;
+        color: rgba(0, 0, 23, 0.47);
+        display: none;
+    }
+    .fa, .far, .fas {
+        font-family: "Font Awesome 5 Free";
+        padding-top: 60px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* For Ipad: */
+    * {
+        font-family: Tahoma;
+        margin: 7px;
+        font-weight: bold;
+    }
+
+    .song-item {
+        border: 1px solid rgba(13, 23, 20, 0.2);
+        border-radius: 10px;
+    }
+
+    .song-item:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    .song-index {
+        float: left;
+        width: 5%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2%;
+        padding-left: 1%;
+    }
+
+    .song-thumbnail {
+        float: left;
+        width: 10%;
+    }
+
+    audio {
+        width: 40%;
+    }
+
+    .song-thumbnail img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .song-infor {
+        padding-top: 1%;
+        float: left;
+        width: 20%;
+    }
+
+    .song-infor .song-name {
+        font-weight: bold;
+    }
+
+    .song-infor .song-singer {
+        font-weight: lighter;
+        color: rgba(0, 0, 23, 0.47);
+    }
+
+    .song-control {
+        padding-top: 3%;
+        color: dodgerblue;
+        cursor: pointer;
+        float: left;
+        width: 10%;
+    }
+
+    .song-detail {
+        float: right;
+        width: 45%;
+        padding-top: 0.5%;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+
+    .center {
+        color: olivedrab;
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .header {
+        box-sizing: border-box;
+        width: 98.8%;
+        background: rgba(110, 132, 143, 0.19);
+    }
+
+    .header .link {
+        float: right;
+        padding-top: 100px;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+
+    .list-song {
+        height: 165px;
+    }
+
+    .player {
+        background: rgba(138, 139, 143, 0.19);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    /* For Ipad Pro: */
+    * {
+        font-family: Tahoma;
+        margin: 7px;
+        font-weight: bold;
+    }
+
+    .song-item {
+        border: 1px solid rgba(13, 23, 20, 0.2);
+        border-radius: 10px;
+    }
+
+    .song-item:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    .song-index {
+        float: left;
+        width: 5%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2%;
+        padding-left: 1%;
+    }
+    audio {
+        width: 50%;
+    }
+
+    .song-thumbnail {
+        float: left;
+        width: 10%;
+    }
+
+    .song-thumbnail img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .song-infor {
+        padding-top: 1%;
+        float: left;
+        width: 20%;
+    }
+
+    .song-infor .song-name {
+        font-weight: bold;
+        font-size: 15px;
+        padding-left: 80px;
+        width: 100%;
+    }
+
+    .song-infor .song-singer {
+        font-weight: lighter;
+        color: rgba(0, 0, 23, 0.47);
+    }
+
+    .song-control {
+        padding-top: 3%;
+        color: dodgerblue;
+        cursor: pointer;
+        float: left;
+        width: 10%;
+    }
+
+    .song-detail {
+        float: right;
+        width: 45%;
+        padding-top: 0.5%;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+
+    .center {
+        color: olivedrab;
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .header {
+        box-sizing: border-box;
+        width: 98.8%;
+        background: rgba(110, 132, 143, 0.19);
+    }
+
+    .header .link {
+        float: right;
+        padding-top: 100px;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+
+    .list-song {
+        height: 165px;
+    }
+
+    .player {
+        background: rgba(138, 139, 143, 0.19);
+    }
 }

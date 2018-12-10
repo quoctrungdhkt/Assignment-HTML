@@ -1,3 +1,6 @@
+alert('Please log in to create song!');
+location.href = 'login.html';
+
 var btnSubmit = document.forms['song-form']['btnSubmit'];
 btnSubmit.onclick = function(){
     if(valueForm()){
@@ -26,7 +29,7 @@ function doSong(){
             alert('Everything is Success!');
         }
     };
-    xhr.open('POST', 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs', true);
+    xhr.open('POST', 'https://2-dot-backup-server-003.appspot.com/_api/v2/songs', true);
     xhr.setRequestHeader('Content-Type','application/json');
     xhr.setRequestHeader('Authorization', 'Basic ' + localStorage.getItem('token-key'));
     xhr.send(sendData);

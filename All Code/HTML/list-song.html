@@ -1,41 +1,17 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<title>List Song</title>-->
-    <!--<link rel="stylesheet" href="../css/list-song.css">-->
-<!--</head>-->
-<!--<body>-->
-<!--<div class="center">-->
-    <!--<h1>List Song</h1>-->
-    <!--<audio controls>-->
-        <!--<source src="#" type="audio/ogg">-->
-        <!--<source src="horse.mp3" type="audio/mpeg">-->
-        <!--Your browser does not support the audio tag.-->
-    <!--</audio>-->
-<!--</div>-->
-<!--<form name="song-form">-->
-    <!--<input name="btn-submit" type="button" value="submit">-->
-<!--</form>-->
-<!--<div id="list-song">-->
-<!--</div>-->
-<!--<script src="../js/list-song.js"></script>-->
-<!--</body>-->
-<!--</html>-->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Bài Hát Tôi Yêu</title>
-<link rel="stylesheet" href="../css/list-song.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Bài Hát</title>
+    <link rel="stylesheet" href="../css/list-song.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 <div class="header">
-    <div class="left">
-         <img src="http://buzzdesign.net/wp-content/uploads/2015/07/4.png" alt="logo Music">
-         <span class="text logo">Bảng Xếp Hạng Bài Hát 2018</span>
-    </div>
-    <div class="right">
+    <img src="http://buzzdesign.net/wp-content/uploads/2015/07/4.png" alt="logo Music">
+    <div class="link">
     <a href="register.html" title="Register member">Register</a>
     <a href="login.html" title="Member login">Login</a>
     <a href="Create.html" title="Create Song">Create Song</a>
@@ -43,21 +19,19 @@
     <a href="my-song.html" title="My Song">My Song</a>
     </div>
 </div>
-<div class="song-player">
-    <div class="song-detail">
-        <marquee behavior="scroll" direction="left">
-            <div class="current-song-title">
-                <span id="current-play-title"></span>
-            </div>
-        </marquee>
-    </div>
     <div class="player">
         <audio controls id="my-mp3" autoplay>
             <source src="" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+    <div class="song-detail">
+        <marquee behavior="scroll" direction="right">
+            <div class="current-song-title">
+                <span id="current-play-title"></span>
+            </div>
+        </marquee>
     </div>
-</div>
+    </div>
 <div class="list-song" id="list-song">
 </div>
 <script src="../js/list-song.js"></script>

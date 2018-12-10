@@ -1,3 +1,5 @@
+alert('Please log in to get your song!');
+location.href = 'login.html';
 var MY_API = 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs/get-mine';
 document.addEventListener('DOMContentLoaded', function () {
     loadSongs();
